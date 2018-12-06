@@ -1,0 +1,7 @@
+COMPONENT=MotionDetectorAppC
+TINYOS_ROOT_DIR?=../..
+
+CFLAGS+= -DRFA1_DEF_RFPOWER=0
+CFLAGS+= -DDIAGMSG_SERIAL_START
+include $(TINYOS_ROOT_DIR)/Makefile.include
+
