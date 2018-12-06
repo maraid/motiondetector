@@ -26,9 +26,7 @@ implementation {
   event void SerialSplitControl.startDone(error_t err) {}
   event void SerialSplitControl.stopDone(error_t err) {}
 
-  event void AMSend.sendDone(message_t* bufPtr, error_t error) {
-    //call Leds.led0Toggle();
-  }
+  event void AMSend.sendDone(message_t* bufPtr, error_t error) {}
 
   event message_t* Receive.receive(message_t* bufPtr, void* payload, uint8_t len) {
     if (len == sizeof(radio_motion_msg_t)) {

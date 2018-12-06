@@ -1,6 +1,6 @@
 #define THRESHOLD 2
 #define LOOPCOUNT 6
-#define TIMEOUT 1000
+#define TIMEOUT 10001
 #define DELAY 35
 
 module MotionDetectorC @safe()
